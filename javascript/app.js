@@ -211,7 +211,6 @@ Loops: a way to repeat code for an amount of time without copying and pasting th
 // i=i+1
 // var test=0;
 // for (var i = 0; i < 5; i++) {
-
 //   // code..
 //   // i=0
 //   // i=1
@@ -220,6 +219,7 @@ Loops: a way to repeat code for an amount of time without copying and pasting th
 //   // i=4
 //   // test+=5
 //   console.log('hi',i);
+
 // }
 
 // console.log('hello after for');
@@ -227,7 +227,8 @@ Loops: a way to repeat code for an amount of time without copying and pasting th
 /*
 While loop: when you want to repeat the code for an unlimeted amount of times  until the condition is false.
 
-while(condition){
+while(contion){
+
   while the condition is true keep running the code, if it's false it will break the loop
 }
 
@@ -242,8 +243,6 @@ while(condition){
 //   console.log('hello');
 //   i++
 // }
-
-
 
 
 
@@ -344,6 +343,7 @@ name(arguments);
 
 
 // ######## DEMO ##########
+
 /*
 1- ask the user whats your favourite movie
 2-keep asking until he only answers with harry potter or lord of the rings
@@ -353,14 +353,16 @@ name(arguments);
 
 */
 
+
 function printFavourite(){
+
 
 var favouriteMovie = prompt('what do you like more harry potter or lord of the rings?');
 
 while (favouriteMovie !== 'harry potter' && favouriteMovie !== 'lord of the rings') {
   favouriteMovie = prompt('please only answer with harry potter or lord of the rings');
-}
 
+}
 var result='';
 
 if (favouriteMovie == 'harry potter') {
@@ -377,7 +379,9 @@ return result;
 
 
 
+
 var getRating=function(){
+
 var stars = prompt('how many starts do you rate our website?');
 
 if (stars > 5) {
@@ -392,6 +396,7 @@ for (var i = 0; i < stars; i++) {
 
 return starResults;
 }
+
 document.write(getRating());
 
 // var name;
